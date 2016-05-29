@@ -1,6 +1,8 @@
 # Release Clerk
 A command line utility for posting release notes as issues to a github shared repository. This is especially useful in a continuous deployment / micro-service environment, where developers release at will, making it difficult to keep track of what changes have been rolled out to, or back from, production.
 
+[![Build Status](https://travis-ci.org/guidesmiths/release-clerk.png)](https://travis-ci.org/guidesmiths/release-clerk)
+
 ## Usage
 ```bash
 npm i release-clerk
