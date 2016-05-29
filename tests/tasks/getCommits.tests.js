@@ -12,17 +12,17 @@ describe('Get Commits', function() {
             assert.equal(ctx.commits[0].sha, 'foo')
             assert.equal(ctx.commits[0].message, 'one')
             assert.equal(ctx.commits[0].contact, 'Rod')
-            assert.equal(ctx.commits[0].date, 'Sun 29th May 2016 08:22:00 +01:00')
+            assert.equal(ctx.commits[0].date, '2016-05-29T07:22:14.234Z')
 
             assert.equal(ctx.commits[1].sha, 'bar')
             assert.equal(ctx.commits[1].message, 'two')
             assert.equal(ctx.commits[1].contact, 'Jane')
-            assert.equal(ctx.commits[1].date, 'Sat 28th May 2016 08:22:00 +01:00')
+            assert.equal(ctx.commits[1].date, '2016-05-28T07:22:14.234Z')
 
             assert.equal(ctx.commits[2].sha, 'baz')
             assert.equal(ctx.commits[2].message, 'three')
             assert.equal(ctx.commits[2].contact, 'Freddy')
-            assert.equal(ctx.commits[2].date, 'Fri 27th May 2016 08:22:00 +01:00')
+            assert.equal(ctx.commits[2].date, '2016-05-27T07:22:14.234Z')
 
             assert.equal(ctx.truncated, false)
 
@@ -77,7 +77,7 @@ describe('Get Commits', function() {
             assert.equal(ctx.commits[0].sha, 'foo')
             assert.equal(ctx.commits[0].message, 'one')
             assert.equal(ctx.commits[0].contact, 'Rod')
-            assert.equal(ctx.commits[0].date, 'Sun 29th May 2016 08:22:00 +01:00')
+            assert.equal(ctx.commits[0].date, '2016-05-29T07:22:14.234Z')
 
             assert.equal(ctx.truncated, true)
             done()

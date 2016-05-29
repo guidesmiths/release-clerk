@@ -19,7 +19,7 @@ describe('Render Issue Body', function() {
             sha: 'foo',
             message: 'one',
             contact: 'Rod',
-            date: 'Sun 29th May 2016 08:22:00 +01:00',
+            date: '2016-05-29T07:22:14.234Z',
             user: 'guidesmiths',
             repository: 'rascal'
         }] }, function(err, ctx) {
@@ -31,7 +31,7 @@ describe('Render Issue Body', function() {
                 '',
                 '| Message | Contact | Date |',
                 '|---------|---------|------|',
-                '| [one](https://github.com/guidesmiths/rascal/commit/foo) | Rod | Sun 29th May 2016 08:22:00 +01:00 |',
+                '| [one](https://github.com/guidesmiths/rascal/commit/foo) | Rod | 2016-05-29T07:22:14.234Z |',
                 '',
                 '',
                 ''
@@ -45,7 +45,7 @@ describe('Render Issue Body', function() {
             sha: 'foo',
             message: 'one',
             contact: 'Rod',
-            date: 'Sun 29th May 2016 08:22:00 +01:00',
+            date: '2016-05-29T07:22:14.234Z',
             user: 'guidesmiths',
             repository: 'rascal'
         }],
@@ -58,7 +58,7 @@ describe('Render Issue Body', function() {
                 '',
                 '| Message | Contact | Date |',
                 '|---------|---------|------|',
-                '| [one](https://github.com/guidesmiths/rascal/commit/foo) | Rod | Sun 29th May 2016 08:22:00 +01:00 |',
+                '| [one](https://github.com/guidesmiths/rascal/commit/foo) | Rod | 2016-05-29T07:22:14.234Z |',
                 '',
                 '**Commit history was truncated**',
                 ''
@@ -73,7 +73,7 @@ describe('Render Issue Body', function() {
             sha: 'foo',
             message: 'one',
             contact: 'Rod',
-            date: 'Sun 29th May 2016 08:22:00 +01:00',
+            date: '2016-05-29T07:22:14.234Z',
             user: 'guidesmiths',
             repository: 'rascal'
         }],
@@ -102,7 +102,7 @@ describe('Render Issue Body', function() {
             sha: 'foo',
             message: 'one',
             contact: 'Rod',
-            date: 'Sun 29th May 2016 08:22:00 +01:00',
+            date: '2016-05-29T07:22:14.234Z',
             user: 'guidesmiths',
             repository: 'rascal'
         }] }, function(err, ctx) {
@@ -114,7 +114,7 @@ describe('Render Issue Body', function() {
                 '',
                 '| Message | Contact | Date |',
                 '|---------|---------|------|',
-                '| [one](https://github.com/guidesmiths/rascal/commit/foo) | Rod | Sun 29th May 2016 08:22:00 +01:00 |',
+                '| [one](https://github.com/guidesmiths/rascal/commit/foo) | Rod | 2016-05-29T07:22:14.234Z |',
                 '',
                 '',
                 ''
@@ -128,7 +128,7 @@ describe('Render Issue Body', function() {
             sha: 'foo',
             message: 'one',
             contact: 'Rod',
-            date: 'Sun 29th May 2016 08:22:00 +01:00',
+            date: '2016-05-29T07:22:14.234Z',
             user: 'guidesmiths',
             repository: 'rascal'
         }] }, function(err, ctx) {
@@ -140,7 +140,7 @@ describe('Render Issue Body', function() {
                 '',
                 '| Message | Contact | Date |',
                 '|---------|---------|------|',
-                '| [one](https://github.com/guidesmiths/rascal/commit/foo) | Rod | Sun 29th May 2016 08:22:00 +01:00 |',
+                '| [one](https://github.com/guidesmiths/rascal/commit/foo) | Rod | 2016-05-29T07:22:14.234Z |',
                 '',
                 '',
                 ''

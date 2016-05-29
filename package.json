@@ -28,7 +28,6 @@
     "hogan.js": "^3.0.2",
     "husky": "^0.11.4",
     "lodash": "^4.13.1",
-    "moment": "^2.13.0",
     "require-all": "^2.0.0"
   },
   "devDependencies": {
