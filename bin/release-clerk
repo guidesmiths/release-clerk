@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+var debug = require('debug')('release-clerk:runner')
+var program = require('commander')
+var _ = require('lodash')
+var releaseClerk = require('../')
+
+program
+  .version('0.0.1')
+  .option('-c --config [string]', 'path to config file')
+  .option('-r --repository [string]', 'repository of the project being released')
+  .option('-u --user [string]', 'user/organisation of the project being released')
+  .option('-p --previous-release-sha [string]', 'last commit sha of the previous release (if any)')
+  .option('-q --current-release-sha [string]', 'last commit sha sha this release')
+  .option('-t --title [string]', 'issue title')
+  .option('-s --summary [string]', 'issue summary')
+  .parse(process.argv);
+
+debug('config: %s', program.config)
+debug('user: %s', program.user)
+debug('repository: %s', program.repository)
+debug('previous commit: %s', program.previousReleaseSha)
+debug('current commit: %s', program.currentReleaseSha)
+debug('title: %s', program.title)
+debug('summary: %s', program.summary)
+
+releaseClerk(_.pick(program, ['config', 'user', 'organisation', 'repository', 'title', 'summary', 'previousReleaseSha', 'currentReleaseSha']), function(err) {
+    if (err) throw err
+})
