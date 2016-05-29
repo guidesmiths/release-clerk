@@ -8,7 +8,7 @@
     "test": "mocha --recursive tests",
     "prepush": "npm run lint && npm test"
   },
-  "bin": "./bin/release-clerk.js",
+  "bin": "./bin/release-clerk",
   "keywords": [
     "release notes",
     "github",
