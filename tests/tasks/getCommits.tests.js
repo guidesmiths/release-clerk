@@ -95,7 +95,7 @@ describe('Get Commits', function() {
     var github = {
         repos: {
             getCommits: function(options, cb) {
-                if (!options.sha || options.sha === 'foo') return cb(null, _.extend(_.slice([
+                if (options.sha === 'foo') return cb(null, _.extend(_.slice([
                     {
                         sha: 'foo',
                         commit: {
