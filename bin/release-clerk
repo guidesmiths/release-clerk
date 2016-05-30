@@ -11,7 +11,7 @@ program
   .option('-r --repository [string]', 'repository of the project being released')
   .option('-u --user [string]', 'user/organisation of the project being released')
   .option('-p --previous-release-sha [string]', 'last commit sha of the previous release (if any)')
-  .option('-q --current-release-sha [string]', 'last commit sha sha this release')
+  .option('-q --current-release-sha [string]', 'last commit sha this release')
   .option('-t --title [string]', 'issue title')
   .option('-s --summary [string]', 'issue summary')
   .parse(process.argv);
