@@ -1,6 +1,6 @@
 {
   "name": "release-clerk",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Posts release comments to github",
   "main": "index.js",
   "scripts": {
