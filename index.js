@@ -15,6 +15,7 @@ function releaseClerk(params, cb) {
         tasks.determineReleaseType,
         tasks.getCommits,
         tasks.renderIssueBody,
+        tasks.ensureMilestone,
         tasks.createIssue
     )
 
