@@ -21,6 +21,9 @@ Usage: release-clerk [options]
     -q --current-release-sha [string]   last commit sha sha this release
     -t --title [string]                 issue title
     -s --summary [string]               issue summary
+    -l --labels [string]                issue labels (comma separated string)
+    -m --milestone [string]             issue milestone
+    -d --debug                          debug (outputs issue to console instead of creating it)
 ```
 
 ## Configuration
