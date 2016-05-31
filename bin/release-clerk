@@ -14,6 +14,8 @@ program
   .option('-q --current-release-sha [string]', 'last commit sha this release')
   .option('-t --title [string]', 'issue title')
   .option('-s --summary [string]', 'issue summary')
+  .option('-l --labels [string]', 'issue labels')
+  .option('-d --debug', 'debug the issue instead of posting it to github')
   .parse(process.argv);
 
 debug('config: %s', program.config)
@@ -23,7 +25,9 @@ debug('previous commit: %s', program.previousReleaseSha)
 debug('current commit: %s', program.currentReleaseSha)
 debug('title: %s', program.title)
 debug('summary: %s', program.summary)
+debug('labels: %s', program.labels)
+debug('debug: %s', program.debug)
 
-releaseClerk(_.pick(program, ['config', 'user', 'organisation', 'repository', 'title', 'summary', 'previousReleaseSha', 'currentReleaseSha']), function(err) {
+releaseClerk(_.pick(program, ['config', 'user', 'organisation', 'repository', 'title', 'summary', 'previousReleaseSha', 'currentReleaseSha', 'labels', 'debug']), function(err) {
     if (err) throw err
 })
