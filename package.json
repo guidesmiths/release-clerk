@@ -21,7 +21,7 @@
   "author": "GuideSmiths Ltd",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.0.0-rc.5",
+    "async": "^3.2.2",
     "commander": "^2.9.0",
     "debug": "^2.2.0",
     "eslint": "^0.24.1",
