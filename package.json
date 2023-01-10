@@ -23,8 +23,8 @@
   "dependencies": {
     "async": "^2.0.0-rc.5",
     "commander": "^2.9.0",
-    "debug": "^2.2.0",
-    "eslint": "^0.24.1",
+    "debug": "^3.1.0",
+    "eslint": "^4.7.0",
     "github": "^0.2.4",
     "hogan.js": "^3.0.2",
     "lodash": "^4.13.1",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "husky": "^0.11.4",
-    "eslint": "^0.1.0",
+    "eslint": "^4.7.0",
     "eslint-config-imperative": "0.0.6",
     "mocha": "^2.5.3",
     "chai": "^3.5.0"
